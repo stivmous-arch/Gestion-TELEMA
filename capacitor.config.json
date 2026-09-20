@@ -1,0 +1,11 @@
+{
+  "appId": "cg.dolisie.telema.gestion",
+  "appName": "Gestion TELEMA",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}
