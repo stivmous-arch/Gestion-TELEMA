@@ -35,7 +35,8 @@ jobs:
 
       - name: Ajouter la plateforme Android
         run: npx cap add android
-
+      - name: Appliquer le logo TELEMA (icone de l'application et ecran de demarrage)
+        run: cp -r android-res/. android/app/src/main/res/
       - name: S'assurer que la permission internet est presente (necessaire a la synchronisation)
         run: |
           grep -q 'android.permission.INTERNET' android/app/src/main/AndroidManifest.xml || \
